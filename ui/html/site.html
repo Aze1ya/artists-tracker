@@ -1,0 +1,142 @@
+{{define "site"}}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupie-tracker</title>
+    <link href="../style/style.css" rel="stylesheet" type="text/css">
+  </head>
+<body >
+  <article class="head"><br><br><br><br>
+  <p type="submit" class= "headname" >  <a href="/" style="color: #fff; text-decoration: none;">Groupie
+    <br>Trackers </a></p>
+  </article>
+  <br><br>  
+  
+  <article class="filter">
+  <center>
+    
+      <form action="/filters/" method="POST">
+        <div class="all-filters">
+
+        <div class="filter-field creation-date">
+          <h3>Creation Date</h3>
+          <div class="filter-param param">
+              <div class="from">
+                  <h4>From:</h4>
+                  <input type="number" min="1900" max="2022" name="creation-date_from" value="1900" class="filter-param-range2" />
+              </div>
+              <div class="to">
+                  <h4>To:</h4>
+                  <input type="number" min="1900" max="2022" name="creation-date_to" value="2022" class="filter-param-range2"  />
+              </div>
+          </div>
+        </div>
+    
+      <div class="filter-field first-album">
+          <h3>First Album</h3>
+          <div class="filter-param param">
+              <div class="from">
+                  <h4>From:</h4>
+                  <input type="number" min="1900" max="2022" name="first-album_from" value="1900" class="filter-param-range2"/>
+              </div>
+              <div class="to">
+                  <h4>To:</h4>
+                  <input type="number" min="1900" max="2022" name="first-album_to" value="2022" class="filter-param-range2"/>
+              </div>
+          </div>
+      </div>
+    
+      <div class="filter-field members" >
+          <h3>Members</h3>
+          <section>
+            <div class="filter-members">
+              <div class="filter-param1" >
+                  <input type="checkbox" id="1-member" name="member" value="1" id="filter-param-member" style=" height: 20px;
+                  width: 20px;"/>
+                  <label for="1-member">1</label>
+              </div>
+  
+              <div class="filter-param1">
+                  <input type="checkbox" id="2-member" name="member" value="2" id="filter-param-range" style=" height: 20px;
+                  width: 20px;"/>
+                  <label for="2-member">2</label>
+              </div>
+  
+              <div class="filter-param1">
+                  <input type="checkbox" id="3-member" name="member" value="3" id="filter-param-range" style=" height: 20px;
+                  width: 20px;" />
+                  <label for="3-member">3</label>
+              </div>
+  
+              <div class="filter-param1">
+                  <input type="checkbox" id="4-member" name="member" value="4" id="filter-param-range" style=" height: 20px;
+                  width: 20px;"/>
+                  <label for="4-member">4</label>
+              </div>
+  
+              <div class="filter-param1">
+                  <input type="checkbox" id="5-member" name="member" value="5" id="filter-param-range" style=" height: 20px;
+                  width: 20px;"/>
+                  <label for="5-member">5</label>
+              </div>
+  
+              <div class="filter-param1">
+                  <input type="checkbox" id="6-member" name="member" value="6" id="filter-param-range" style=" height: 20px;
+                  width: 20px;" />
+                  <label for="6-member">6</label>
+              </div>
+  
+              <div class="filter-param1">
+                  <input type="checkbox" id="7-member" name="member" value="7" id="filter-param-range" style=" height: 20px;
+                  width: 20px;"/>
+                  <label for="7-member">7</label>
+              </div>
+  
+              <div class="filter-param1">
+                  <input type="checkbox" id="8-member" name="member" value="8" id="filter-param-range" style=" height: 20px;
+                  width: 20px;" />
+                  <label for="8-member">8</label>
+              </div>
+            </div>
+          </section>
+      </div>
+     
+  
+      <div class="filter-field locations">
+          <h3>Locations</h3>
+          <div class="filter-param">
+              <input
+                  type="text"
+                  id="filter-param-range"
+                  list="location-datalist"
+                  class="location-input"
+                  name="locations"
+                  placeholder="Los Angeles, USA"
+                  />
+          </div>
+      </div>
+     
+      </div>
+      <div>
+        <br> <br>
+      <button type="submit" class="filter-button1" >Search</button>
+      <button type="reset" class="filter-button1" >Reset</button>
+      </div>
+      </form>
+ 
+  
+  <h1 class="no-result-message">{{if not .}} No Result. Try again! {{end}}</h1>
+  
+  </form>
+
+</center> 
+  </article>
+    <br><br>       
+
+{{template "base" .}}
+</body>
+</html>
+{{end}}

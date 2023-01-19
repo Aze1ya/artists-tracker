@@ -1,0 +1,15 @@
+{{define "base"}}
+  <link href="../style/style.css" rel="stylesheet" type="text/css">
+  <article class="table" style="color: white">
+  <div class="table_inside" 
+  style="display: flex; flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: flex-start;">
+    {{range .}}
+  <div>
+    {{template "content" .}}
+  </div>
+  {{end}}
+  </div>
+{{end}}

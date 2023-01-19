@@ -1,0 +1,25 @@
+{{define "content"}}
+<link href="../style/style.css" rel="stylesheet" type="text/css">
+  <div class="image" style="color: white">
+     <img class="imgofartist" src="{{ .Image}}" name="image">
+  </div>
+<div style="display: flex; justify-content: center;"><a href="/artist/{{ .Id}}">
+  <button type="submit" name="id" value="{{ .Id}}" style="display: inline-block;
+  padding: 12px 32px;
+  transition: all 0.3s ease-out;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: #222;
+  background-clip: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7em;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;">{{ .Name}}
+</div>
+</a>
+
+{{end}}

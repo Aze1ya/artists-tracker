@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style/style.css" rel="stylesheet" type="text/css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=de1dd4ad-ad14-4d54-b93f-c66e6c686061&lang=ru_RU" type="text/javascript">
+    </script>
+    <link rel="stylesheet" type="text/css"href="https://js.api.here.com/v3/3.1/mapsjs-ui.css"/>
+    <title>{{ .Name}}</title>
+</head>
+<body style='margin: 0'>
+    <article class="head">
+    </article>
+    <br><br><br>
+<div class="div1">
+<div class="div2">
+
+<div class="datatext">
+    <p class="pName">Name:</p>
+    <p class="pCreation">Creation Date:</p>
+    <p class="pFirstAlbum">First Album:</p>
+    <p class="pMembers">Members:</p>
+</div>
+
+<div class="datatext2">
+  <p  class="pName">{{ .Name}}</p>
+  <p  class="pCreation">{{.CreationDate}} </p>
+  <p  class="pFirstAlbum">{{.FirstAlbum}} </p>
+  <p  class="pMembers">{{range .Members}}</p>
+  <p >{{.}}</p>
+  {{end}}
+</div>
+
+<div class="image_artist"><img class="image1" src="{{ .Image}}"></div>
+</div>
+
+<div>
+<div class="concerts">
+  <h4>Locations and Dates of Concerts:</h4>
+  <div class="info-inner">
+    {{ range $key,$value:= .RelationsData.DatesLocations }}
+  <p class="city">{{$key}}:
+  <p class="city2">
+      {{range $val:=$value}}
+      {{$val}}
+  </p>
+      {{end}}
+  </p>
+    {{end}}
+  </div>
+  </div>
+</div>
+</div>
+<div style="width: 100%; display: flex; justify-content: center;">
+<div id="map" class="map1" style="width: 700px; height: 400px;">
+<br><br><br>
+
+</div>
+</div>
+<br><br><br>
+</body>
+</html>

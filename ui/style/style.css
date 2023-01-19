@@ -1,0 +1,370 @@
+body {
+  background-color: #222;
+}
+.table_inside {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.headname {
+  text-align: center;
+  color: white;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  text-transform: uppercase;
+    color: #fff;
+}
+a.head {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+.table {
+  color: white;
+  text-align: center;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5 em;
+  font-weight: 200;
+}
+.button {
+  display: inline-block;
+  padding: 12px 32px;
+  transition: all 0.3s ease-out;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: rgb(41, 41, 41);
+  background-clip: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.button :hover {
+  transition: all 0.3s ease-out;
+  transform: scale(1.02, 1.02);
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 16px 2px;
+}
+.pMembers {
+  color: white;
+}
+.all-filters {
+  display: flex; flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+.filter-members,
+.filter-button {
+padding: 12px 32px;
+transition: all 0.3s ease-out;
+text-transform: uppercase;
+color: #fff;
+border: none;
+border-radius: 8px;
+outline: none;
+background-color: rgb(41, 41, 41);
+background-clip: border-box;
+}
+.filter-button1 {
+  display: inline-block;
+      padding: 12px 32px;
+      transition: all 0.3s ease-out;
+      text-transform: uppercase;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      background-color: rgb(41, 41, 41);
+      background-clip: border-box;
+      font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+.filter-param-range2 {
+  border-radius: 7px;
+ padding-left: 10px;
+ padding-right: 20px;
+ border: 1px solid #d0c4db;
+ outline: none;
+ width: 150px;
+ height: 33px;
+ transition: .2s;
+ color: black;
+}
+
+.filter-param-member {
+  height: 20px;
+  width: 20px;
+}
+input {
+  accent-color: black;
+  font-size: 20px;
+}
+.no-result-message {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+.location-input{
+  display: inline-block;
+  padding: 12px 32px;
+  transition: all 0.3s ease-out;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: rgb(41, 41, 41);
+  background-clip: border-box;
+}
+
+
+@media screen and (max-width: 700px) {
+  .image :hover {
+    transition: all 0.3s ease-out;
+    transform: scale(1.02, 1.02);
+    box-shadow: rgba(255, 255, 255, 0.3) 0 0 16px 2px;
+  }
+  
+  .head {
+    background-color: rgb(124, 124, 124);
+    height: 250px;
+    background-image: url("img/back-mini.jpg");
+    background-size: cover;
+    
+  }
+  .ahead {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+  }
+  .headname {
+    text-align: center;
+    color: white;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+  }
+  .image1 {
+    height: 100px;
+    width: 100px;
+  }
+  .datatext {
+    text-align: left;
+    color: white;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.5em;
+    font-weight: 500;
+  }
+  .datatext2 {
+  text-align: center;
+  color: white;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.5em;
+}
+  .concerts{
+    text-align: center;
+    color: white;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.5em;
+    
+  }
+  .city {
+    text-align: center;
+    color: white;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9em;
+    text-transform: uppercase ;
+  }
+  .div1{
+    display: flex; flex-wrap: wrap;
+    align-content: left;
+    justify-content:center;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .div2{
+    display: flex; flex-wrap: wrap;
+    align-content: left;
+    justify-content:center;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  
+}
+
+@media screen and (min-width: 700px) {
+  .head {
+    background-color: rgb(124, 124, 124);
+    height: 250px;
+    background-image: url("img/back-mini.jpg");
+    background-size: cover;
+  }
+  .ahead {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+  }
+  .image :hover {
+    transition: all 0.3s ease-out;
+    transform: scale(1.02, 1.02);
+    box-shadow: rgba(255, 255, 255, 0.3) 0 0 16px 2px;
+  }
+  .image1 {
+    height: 200px;
+    width: 200px;
+  }
+  .datatext {
+    text-align: left;
+    color: white;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7em;
+    font-weight: 500;
+  }
+  .datatext2 {
+  text-align: center;
+  color: white;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7em;
+  
+}
+  .concerts{
+    text-align: center;
+    color: white;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7em;
+    
+  }
+  .city {
+    text-align: center;
+    color: white;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8em;
+    text-transform: uppercase ;
+  }
+  .div1{
+    display: flex; flex-wrap: wrap;
+    align-content: left;
+    justify-content:center;
+    align-items: flex-start;
+    gap: 70px;
+  }
+  .div2{
+    display: flex; flex-wrap: wrap;
+    align-content: left;
+    justify-content:center;
+    align-items: flex-start;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .head {
+    background-color: rgb(124, 124, 124);
+    height: 500px;
+    background-image: url("img/back.jpg");
+    background-size: cover;
+  }
+  .ahead {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+  }
+  .image :hover {
+    transition: all 0.3s ease-out;
+    transform: scale(1.02, 1.02);
+    box-shadow: rgba(255, 255, 255, 0.3) 0 0 16px 2px;
+  }
+  .datatext {
+    text-align: left;
+    color: white;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  .datatext2 {
+  text-align: center;
+  color: white;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  
+}
+  .concerts{
+    text-align: center;
+    color: white;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+    
+  }
+  .city {
+    text-align: center;
+    color: white;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.0em;
+    text-transform: uppercase ;
+  }
+  .div1{
+    display: flex; flex-wrap: wrap;
+    align-content: left;
+    justify-content:center;
+    align-items: flex-start;
+    gap: 250px;
+  }
+  .div2{
+    display: flex; flex-wrap: wrap;
+    align-content: left;
+    justify-content:center;
+    align-items: flex-start;
+    gap: 90px;
+  }
+  .image1 {
+    height: 300px;
+    width: 300px;
+  }
+ 
+}
+
